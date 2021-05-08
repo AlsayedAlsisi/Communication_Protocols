@@ -98,7 +98,7 @@ int main(void)
 void uart_receiver_init(void)
 {
 	/* UART Initialization */
-	(void)uart_baud_rate_config(BAUDRATE, F_CPU);
+	uart_baud_rate_config(BAUDRATE, F_CPU);
  	uart_frame_format_select(UART_8BIT_CHARACTER_SIZE, UART_1STOP_BIT);
  	uart_synch_asynch_mode_select(UART_ASYNCHRONOUS_OPERATION);
  	uart_receiver_enable(); 
