@@ -96,8 +96,8 @@ void uart_transmitter_init()
 *
 ** Description:
 *  This function works as a task that updates the data that will be sent over the UART. Provided here is just a 
-*   dummy code for demonstration purposes. The function could implement other any logic that updates the data to 
-*   be sent, for example with temperature value obtained from the sensor connected to the microcontroller.
+*   dummy code for demonstration purposes. The function could implement any other logic that updates the data to 
+*   be sent, for example with a temperature value obtained from a sensor connected to the microcontroller.
 *
 ** Input Parameters:
 *  - void
