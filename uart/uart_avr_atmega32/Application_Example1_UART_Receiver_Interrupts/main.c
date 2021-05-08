@@ -74,12 +74,12 @@ static void display_task(void);
 ********************************************************************************************************************/
 int main(void)
 {
-	uart_receiver_init();
+    uart_receiver_init();
     lcd_init();
 	
     while (1) 
     {
-		display_task(); 
+	display_task(); 
     }
 }
 
@@ -112,8 +112,8 @@ void uart_receiver_init(void)
 *  receive_task
 *
 ** Description:
-*  The receive task checks for the receipt of a new character in the UART module and appends it to the LCD data 
-*  queue. This function runs in the receive complete interrupt routine.
+*  This function runs in the receive complete interrupt routine once data is received by the UART receiver to add 
+*  it to the LCD data queue. 
 *
 ** Input Parameters:
 *  - void
